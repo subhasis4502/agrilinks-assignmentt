@@ -20,7 +20,7 @@ It installs the required node modules in 'node_module' folder
 
 ###  `npm start`
 
-After installing node_modules, Run npm start on client the terminals.
+After installing node_modules, Run npm start on api the terminals.
 
 ## Open another Terminal
 
