@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const app = express();
 const morgan = require("morgan");
 const comodityRoute = require("./routes/comodities");
@@ -19,6 +20,11 @@ mongoose.connect(
 //Middleware
 app.use(express.json());
 app.use(morgan("common"));
+app.use(
+  cors({
+  origin: "*",
+})
+)
 
 app.use("/api/comodities", comodityRoute);
 

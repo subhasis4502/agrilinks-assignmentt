@@ -16,15 +16,16 @@ const ComoditySchema = new mongoose.Schema(
     },
     marketName: {
       type: String,
-      required: true,
     },
     users: {
       type: Array,
       default: [],
+      required: true,
     },
     priceUnit: {
       type: String,
       default: "Kg",
+      required: true,
     },
     minPrice: {
       type: Number,
