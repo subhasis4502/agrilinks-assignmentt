@@ -19,7 +19,6 @@ export default function Home() {
   // Get the list of aggregated reports by Commodity
   const handleSearch = async (e) => {
     e.preventDefault();
-    console.log(item.current.value);
     let html = "";
     fetch(`http://127.0.0.1:8800/api/comodities/reports/${item.current.value}`)
       .then((response) => {
@@ -75,7 +74,6 @@ export default function Home() {
       minPrice: minPrice.current.value,
       maxPrice: maxPrice.current.value,
     };
-    console.log(comodity);
     postData("http://127.0.0.1:8800/api/comodities/reports", comodity);
 
     // Reseting the form
@@ -94,11 +92,11 @@ export default function Home() {
     <div>
       <div className="topbarContainer">
         <div className="topbarLeft">
-          <h3>Sabji Mandi</h3>
+          <h3>Gramoday</h3>
           <p>Get the latest prices of your daily comodities</p>
         </div>
         <div className="topbarRight">
-          <form class="d-flex">
+          <form >
             <input
               className="input"
               type="search"
