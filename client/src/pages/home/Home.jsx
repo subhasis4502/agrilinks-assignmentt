@@ -94,7 +94,7 @@ export default function Home() {
     <div>
       <div className="topbarContainer">
         <div className="topbarLeft">
-          <h2>Sabji Mandi</h2>
+          <h3>Sabji Mandi</h3>
           <p>Get the latest prices of your daily comodities</p>
         </div>
         <div className="topbarRight">
